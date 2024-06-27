@@ -1,25 +1,29 @@
-# Prerequisites
-#
-- JDK 11 
-- Maven 3 
-- MySQL 8
+# README
 
-# Technologies 
+This project is forked from `hkhcoder/vprofile-project` as resource for personal DevOps projects
+
+## Prerequisites
+
+### JDK/Server/Web framework/Database
+- JDK 11
+- Maven 3
+- MySQL 8
 - Spring MVC
 - Spring Security
 - Spring Data JPA
-- Maven
 - JSP
 - Tomcat
 - MySQL
 - Memcached
-- Rabbitmq
-- ElasticSearch
-# Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+- RabbitMQ
+- Elasticsearch
 
+## Database Setup
 
+We use MySQL for the database. To import the SQL dump file:
+
+1. Locate the SQL dump file at `/src/main/resources/db_backup.sql`.
+2. Use the following command to import the dump into your MySQL database:
+   ```sh
+   mysql -u <user_name> -p accounts < /src/main/resources/db_backup.sql
+   ```

@@ -47,7 +47,7 @@ systemctl start tomcat
 systemctl enable tomcat
 
 git clone -b main https://github.com/rongli/vprofile-project-rli.git
-cd vprofile-project
+cd vprofile-project-rli
 mvn install
 systemctl stop tomcat
 sleep 20
