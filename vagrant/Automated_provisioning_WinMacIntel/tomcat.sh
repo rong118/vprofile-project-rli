@@ -46,7 +46,7 @@ systemctl daemon-reload
 systemctl start tomcat
 systemctl enable tomcat
 
-git clone -b main https://github.com/rongli/vprofile-project-rli.git
+git clone -b main https://github.com/rong118/vprofile-project-rli.git
 cd vprofile-project-rli
 mvn install
 systemctl stop tomcat
